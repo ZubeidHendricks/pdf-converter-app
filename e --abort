@@ -1,0 +1,309 @@
+[1mdiff --git a/.gitignore b/.gitignore[m
+[1mindex 14ee0ad..4d29575 100644[m
+[1m--- a/.gitignore[m
+[1m+++ b/.gitignore[m
+[36m@@ -1,54 +1,23 @@[m
+[31m-﻿# Dependency directories[m
+[31m-node_modules/[m
+[32m+[m[32m# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.[m
+ [m
+[31m-# Production build[m
+[32m+[m[32m# dependencies[m
+[32m+[m[32m/node_modules[m
+[32m+[m[32m/.pnp[m
+[32m+[m[32m.pnp.js[m
+[32m+[m
+[32m+[m[32m# testing[m
+[32m+[m[32m/coverage[m
+[32m+[m
+[32m+[m[32m# production[m
+ /build[m
+ [m
+[31m-# Misc[m
+[32m+[m[32m# misc[m
+ .DS_Store[m
+ .env.local[m
+ .env.development.local[m
+ .env.test.local[m
+ .env.production.local[m
+ [m
+[31m-# Logs[m
+ npm-debug.log*[m
+ yarn-debug.log*[m
+ yarn-error.log*[m
+[31m-[m
+[31m-# IDE[m
+[31m-.vscode/[m
+[31m-.idea/[m
+[31m-[m
+[31m-# Temporary files[m
+[31m-*.tmp[m
+[31m-*.bak[m
+[31m-*.swp[m
+[31m-[m
+[31m-# Compiled files[m
+[31m-*.log[m
+[31m-*.pid[m
+[31m-*.seed[m
+[31m-*.pid.lock[m
+[31m-[m
+[31m-# Dependency directories[m
+[31m-jspm_packages/[m
+[31m-[m
+[31m-# Optional npm cache directory[m
+[31m-.npm[m
+[31m-[m
+[31m-# Optional eslint cache[m
+[31m-.eslintcache[m
+[31m-[m
+[31m-# Optional REPL history[m
+[31m-.node_repl_history[m
+[31m-[m
+[31m-# Output of 'npm pack'[m
+[31m-*.tgz[m
+[31m-[m
+[31m-# Yarn Integrity file[m
+[31m-.yarn-integrity[m
+[31m-[m
+[31m-# dotenv environment variables file[m
+[31m-.env[m
+[31m-.env.test[m
+[1mdiff --git a/README.md b/README.md[m
+[1mindex 0abd9ee..93c3b52 100644[m
+[1m--- a/README.md[m
+[1m+++ b/README.md[m
+[36m@@ -1,16 +1,16 @@[m
+ <<<<<<< HEAD[m
+[32m+[m[32m# Getting Started with Create React App[m
+[32m+[m[32m=======[m
+[32m+[m[32m<<<<<<< HEAD[m
+ # PDF Converter[m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+ [m
+[31m-## Features[m
+[31m-- Convert PDF files[m
+[31m-- Compress PDFs[m
+[31m-- Rotate PDFs[m
+[32m+[m[32mThis project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).[m
+ [m
+[31m-## Setup[m
+[31m-1. Clone the repository[m
+[31m-2. Run `npm install`[m
+[31m-3. Run `npm start`[m
+[32m+[m[32m## Available Scripts[m
+ [m
+[32m+[m[32m<<<<<<< HEAD[m
+[32m+[m[32m=======[m
+ ## Technologies[m
+ - React[m
+ - PDF-lib[m
+[36m@@ -22,6 +22,7 @@[m [mThis project was bootstrapped with [Create React App](https://github.com/faceboo[m
+ [m
+ ## Available Scripts[m
+ [m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+ In the project directory, you can run:[m
+ [m
+ ### `npm start`[m
+[36m@@ -86,4 +87,7 @@[m [mThis section has moved here: [https://facebook.github.io/create-react-app/docs/d[m
+ ### `npm run build` fails to minify[m
+ [m
+ This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)[m
+[32m+[m[32m<<<<<<< HEAD[m
+[32m+[m[32m=======[m
+ >>>>>>> 845d07b (Update project)[m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+[1mdiff --git a/package.json b/package.json[m
+[1mindex 6d08264..463b88c 100644[m
+[1m--- a/package.json[m
+[1m+++ b/package.json[m
+[36m@@ -3,6 +3,10 @@[m
+   "version": "0.1.0",[m
+   "private": true,[m
+   "dependencies": {[m
+[32m+[m[32m<<<<<<< HEAD[m
+[32m+[m[32m    "cra-template": "1.2.0",[m
+[32m+[m[32m    "file-saver": "^2.0.5",[m
+[32m+[m[32m=======[m
+ <<<<<<< HEAD[m
+     "react": "^18.2.0",[m
+     "react-dom": "^18.2.0",[m
+[36m@@ -14,18 +18,49 @@[m
+ =======[m
+     "cra-template": "1.2.0",[m
+     "file-saver": "^2.0.5",[m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+     "pdf-lib": "^1.17.1",[m
+     "react": "^19.0.0",[m
+     "react-dom": "^19.0.0",[m
+     "react-dropzone": "^14.3.5",[m
+     "react-scripts": "5.0.1"[m
+[32m+[m[32m<<<<<<< HEAD[m
+[32m+[m[32m=======[m
+ >>>>>>> 845d07b (Update project)[m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+   },[m
+   "scripts": {[m
+     "start": "react-scripts start",[m
+     "build": "react-scripts build",[m
+     "test": "react-scripts test",[m
+     "eject": "react-scripts eject"[m
+[32m+[m[32m<<<<<<< HEAD[m
+[32m+[m[32m  },[m
+[32m+[m[32m  "eslintConfig": {[m
+[32m+[m[32m    "extends": [[m
+[32m+[m[32m      "react-app",[m
+[32m+[m[32m      "react-app/jest"[m
+[32m+[m[32m    ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  "browserslist": {[m
+[32m+[m[32m    "production": [[m
+[32m+[m[32m      ">0.2%",[m
+[32m+[m[32m      "not dead",[m
+[32m+[m[32m      "not op_mini all"[m
+[32m+[m[32m    ],[m
+[32m+[m[32m    "development": [[m
+[32m+[m[32m      "last 1 chrome version",[m
+[32m+[m[32m      "last 1 firefox version",[m
+[32m+[m[32m      "last 1 safari version"[m
+[32m+[m[32m    ][m
+[32m+[m[32m  },[m
+[32m+[m[32m  "devDependencies": {[m
+[32m+[m[32m    "autoprefixer": "^10.4.20",[m
+[32m+[m[32m    "postcss": "^8.4.49",[m
+[32m+[m[32m    "tailwindcss": "^3.4.17"[m
+[32m+[m[32m  }[m
+[32m+[m[32m}[m
+[32m+[m[32m=======[m
+ <<<<<<< HEAD[m
+   }[m
+ }[m
+[36m@@ -56,3 +91,4 @@[m
+   }[m
+ }[m
+ >>>>>>> 845d07b (Update project)[m
+[32m+[m[32m>>>>>>> 31c75d1 (Update PDF Converter project - 01/03/2025 14:20:52)[m
+[1mdiff --git a/src/App.js b/src/App.js[m
+[1mdeleted file mode 100644[m
+[1mindex c7073af..0000000[m
+[1m--- a/src/App.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,16 +0,0 @@[m
+[31m-import React from 'react';[m
+[31m-import PdfConverter from './components/PdfConverter';[m
+[31m-import './App.css';[m
+[31m-[m
+[31m-function App() {[m
+[31m-  return ([m
+[31m-    <div className="min-h-screen bg-gray-100 flex items-center justify-center">[m
+[31m-      <div className="bg-white p-8 rounded-xl shadow-lg">[m
+[31m-        <h1 className="text-3xl font-bold mb-6 text-center">PDF Converter</h1>[m
+[31m-        <PdfConverter />[m
+[31m-      </div>[m
+[31m-    </div>[m
+[31m-  );[m
+[31m-}[m
+[31m-[m
+[31m-export default App;[m
+\ No newline at end of file[m
+[1mdiff --git a/src/components/PdfConverter.js b/src/components/PdfConverter.js[m
+[1mdeleted file mode 100644[m
+[1mindex 17fad45..0000000[m
+[1m--- a/src/components/PdfConverter.js[m
+[1m+++ /dev/null[m
+[36m@@ -1,77 +0,0 @@[m
+[31m-import React, { useState } from 'react';[m
+[31m-import { PDFDocument } from 'pdf-lib';[m
+[31m-import { saveAs } from 'file-saver';[m
+[31m-[m
+[31m-const PdfConverter = () => {[m
+[31m-  const [sourceFile, setSourceFile] = useState(null);[m
+[31m-  const [conversionType, setConversionType] = useState('compress');[m
+[31m-  const [isProcessing, setIsProcessing] = useState(false);[m
+[31m-[m
+[31m-  const handleFileUpload = (event) => {[m
+[31m-    const file = event.target.files[0];[m
+[31m-    setSourceFile(file);[m
+[31m-  };[m
+[31m-[m
+[31m-  const convertPdf = async () => {[m
+[31m-    if (!sourceFile) {[m
+[31m-      alert('Please upload a PDF file first');[m
+[31m-      return;[m
+[31m-    }[m
+[31m-[m
+[31m-    setIsProcessing(true);[m
+[31m-[m
+[31m-    try {[m
+[31m-      const arrayBuffer = await sourceFile.arrayBuffer();[m
+[31m-      const pdfDoc = await PDFDocument.load(arrayBuffer);[m
+[31m-[m
+[31m-      const pages = pdfDoc.getPages();[m
+[31m-      [m
+[31m-      if (conversionType === 'compress') {[m
+[31m-        pages.forEach(page => {[m
+[31m-          page.scale(0.8, 0.8);[m
+[31m-        });[m
+[31m-      } else if (conversionType === 'rotate') {[m
+[31m-        pages.forEach(page => {[m
+[31m-          page.setRotation({ angle: 90 });[m
+[31m-        });[m
+[31m-      }[m
+[31m-[m
+[31m-      const pdfBytes = await pdfDoc.save();[m
+[31m-      const blob = new Blob([pdfBytes], { type: 'application/pdf' });[m
+[31m-      saveAs(blob, `converted_${sourceFile.name}`);[m
+[31m-    } catch (error) {[m
+[31m-      console.error('Conversion error:', error);[m
+[31m-      alert('PDF conversion failed');[m
+[31m-    } finally {[m
+[31m-      setIsProcessing(false);[m
+[31m-    }[m
+[31m-  };[m
+[31m-[m
+[31m-  return ([m
+[31m-    <div className="space-y-4">[m
+[31m-      <input [m
+[31m-        type="file" [m
+[31m-        accept=".pdf" [m
+[31m-        onChange={handleFileUpload} [m
+[31m-        className="w-full p-2 border rounded"[m
+[31m-      />[m
+[31m-      <select [m
+[31m-        value={conversionType}[m
+[31m-        onChange={(e) => setConversionType(e.target.value)}[m
+[31m-        className="w-full p-2 border rounded"[m
+[31m-      >[m
+[31m-        <option value="compress">Compress PDF</option>[m
+[31m-        <option value="rotate">Rotate PDF</option>[m
+[31m-      </select>[m
+[31m-      <button [m
+[31m-        onClick={convertPdf} [m
+[31m-        disabled={!sourceFile}[m
+[31m-        className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600 disabled:opacity-50"[m
+[31m-      >[m
+[31m-        Convert PDF[m
+[31m-      </button>[m
+[31m-    </div>[m
+[31m-  );[m
+[31m-};[m
+[31m-[m
+[31m-export default PdfConverter;[m
+\ No newline at end of file[m
+[1mdiff --git a/vercel.json b/vercel.json[m
+[1mdeleted file mode 100644[m
+[1mindex 1ef71c1..0000000[m
+[1m--- a/vercel.json[m
+[1m+++ /dev/null[m
+[36m@@ -1,10 +0,0 @@[m
+[31m-{[m
+[31m-  "version": 2,[m
+[31m-  "name": "pdf-converter",[m
+[31m-  "builds": [[m
+[31m-    { "src": "src/index.js", "use": "@vercel/node" }[m
+[31m-  ],[m
+[31m-  "routes": [[m
+[31m-    { "src": "/(.*)", "dest": "src/index.js" }[m
+[31m-  ][m
+[31m-}[m
+\ No newline at end of file[m
